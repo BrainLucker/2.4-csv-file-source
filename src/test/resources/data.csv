@@ -1,0 +1,9 @@
+TEST NAME                       ,AMOUNT   ,REGISTERED,EXPECTED
+"Registered user, Under Limit"  ,100060   ,true      ,30
+"Registered user, Over Limit"   ,100000060,true      ,500
+"Unregistered user, Under Limit",100060   ,false     ,10
+"Unregistered user, Over Limit" ,100000060,false     ,500
+"Registered user, Zero Amount"  ,3333     ,true      ,0
+"Unregistered user, Zero Amount",9999     ,false     ,0
+"Registered user, Near Limit"   ,1666666  ,true      ,499
+"Unregistered user, Near Limit" ,4999999  ,false     ,499
